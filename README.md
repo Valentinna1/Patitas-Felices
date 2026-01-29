@@ -22,7 +22,8 @@ VALENTINA PEREZ
 ## Cómo ver el proyecto
 
 El proyecto está disponible online mediante **GitHub Pages**:  
-[Link del sitio](https://valentinaPerez.github.io/nombre-del-repo/)  
+[Link del sitio](https://valentinaPerez.github.io/Patitas-Felices/)  
+
 
 
 
