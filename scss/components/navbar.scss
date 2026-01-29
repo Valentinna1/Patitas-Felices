@@ -1,0 +1,67 @@
+.navbar {
+  background-color: $primary !important;
+  box-shadow: $shadow;
+  backdrop-filter: blur(10px);
+
+  .navbar-brand {
+    font-weight: 700;
+    color: white;
+  }
+
+  .nav-link {
+    color: white;
+    font-weight: 500;
+    position: relative;
+    @include transition;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: $secondary;
+      bottom: 0;
+      left: 0;
+      @include transition;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.navbar-brand {
+  font-weight: 700;
+  animation: brandFloat 3.5s ease-in-out infinite,
+             brandGlow 4s ease-in-out infinite;
+}
+
+/* Movimiento */
+@keyframes brandFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Brillo y color más intenso */
+@keyframes brandGlow {
+  0% {
+    color: #ffffff;
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+  50% {
+    color: #86efac; /* verde brillante */
+    text-shadow: 0 0 10px rgba(134, 239, 172, 0.9);
+  }
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+}

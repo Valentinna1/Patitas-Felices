@@ -1,0 +1,16 @@
+@include responsive(md) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card img {
+    height: 180px;
+    object-fit: cover;
+  }
+}
+
+@include responsive(sm) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,34 @@
+// =========================
+// colores
+// =========================
+$primary: #2f855a;
+$secondary: #68d391;
+$accent: #fef3c7;
+$dark: #1f2937;
+$light: #fdfcf9;
+
+
+// =========================
+// espacios
+// =========================
+$spacing-xs: .25rem;
+$spacing-sm: .5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 4rem;
+
+// =========================
+// bordes
+// =========================
+$radius: 12px;
+
+// =========================
+// sombras
+// =========================
+$shadow-soft: 0 10px 25px rgba(0,0,0,.08);
+$shadow: $shadow-soft;
+
+// =========================
+// fuente
+// =========================
+$font-main: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;

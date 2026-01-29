@@ -1,0 +1,65 @@
+// =========================
+// BASE
+// =========================
+@import "base/variables";
+@import "base/reset";
+@import "base/mixins";
+
+// =========================
+// COMPONENTS
+// =========================
+@import "components/navbar";
+@import "components/cards";
+@import "components/footer";
+@import "components/animations";
+
+// =========================
+// LAYOUT
+// =========================
+@import "layout/grid";
+@import "layout/responsive";
+
+// =========================
+// GLOBALES
+// =========================
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: $font-main;
+    background: linear-gradient(180deg, #fdfcf9 0%, #f0fdf4 100%);
+    color: $dark;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+}
+
+section {
+    padding: $spacing-xl 0;
+}
+
+h1,
+h2,
+h3 {
+    color: $dark;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border: none;
+
+    &:hover {
+        background-color: darken($primary, 8%);
+    }
+}
